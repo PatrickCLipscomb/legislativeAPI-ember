@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  tagTypes: ['senate', 'house', 'joint'],
+  tagTypes: [null, 'senate', 'house', 'joint'],
   tagType: null,
   actions: {
     zipLookup() {
@@ -21,7 +21,7 @@ export default Ember.Component.extend({
       const selectedIndex = selectedEl.selectedIndex;
       const options = $('#tag-type-select option');
       const selectedValue = options[selectedIndex].value;
-      console.log(selectedValue);
+      // console.log(selectedValue);
       var params = {
         chamber: selectedValue
       };

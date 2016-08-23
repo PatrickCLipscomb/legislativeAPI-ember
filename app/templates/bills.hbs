@@ -1,0 +1,9 @@
+bills page
+
+
+    <h3>Bills by Keyword</h3>
+    <ul>
+      {{#each model.bills as |bill|}}
+        <li>{{bill.official_title}}</li>
+      {{/each}}
+    </ul>

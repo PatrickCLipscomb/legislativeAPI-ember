@@ -1,0 +1,9 @@
+<div class="col-xs-6 col-xs-offset-3 jumbotron">
+  <div>Bill Key Word
+    <select {{action 'selectBillType' on='change'}} id="tag-bill-select">
+      {{#each tagTypes as |type|}}
+        <option value="{{type}}" selected={{eq type model.tagType}}>{{type}}</option>
+      {{/each}}
+    </select>
+  </div>
+</div>

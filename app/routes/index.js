@@ -10,6 +10,9 @@ export default Ember.Route.extend({
     },
     committees(params) {
       this.transitionTo('committees', params.chamber)
+    },
+    billfinder(params) {
+      this.transitionTo('bills', params.bill)
     }
   }
 });

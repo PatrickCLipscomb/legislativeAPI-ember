@@ -1,0 +1,7 @@
+upcoming-bill page
+
+<ul>
+  {{#each model as |bill|}}
+    <li>{{bill.chamber}} <a href={{bill.url}}>{{bill.url}}</a></li>
+  {{/each}}
+</ul>
